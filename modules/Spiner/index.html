@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roulette wheel</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body class="back" >
+    <!-- <h1  ></h1> -->
+    <h1><p id="result"></p></h1>
+    <!-- <h1>TOTAL:<span id="b"></span></h1> -->
+    <div style="float: right;margin-right:433px;margin-top: 100px;">
+      <table id="table" border="1px solid black">
+        <tr>
+          <td onclick="price1()">1 <br><p id="t1"></p></td>
+          <td onclick="price2()">2 <br><p id="t2"></p></td>
+          <td onclick="price5()">5 <br><p id="t5"></p></td>
+        </tr>
+        <tr>
+          <td onclick="price10()">10 <br><p id="t10"></p></td>
+          <td onclick="price20()">20 <br><p id="t20"></p></td>
+          <td onclick="price40()">40 <br><p id="t40"></p></td>
+        </tr>
+      </table>
+    </div>
+    <div style="float: right;margin-top: 286px;display: none;" id="secondTable">
+      <table id="table1" border="1px solid black">
+        <tr>
+          <td>1</td>
+          <td>10</td>
+          <td>20</td>
+          <td>50</td>
+          <td>100</td>
+        </tr>
+      </table>
+    </div>
+    <div id="app">
+      <img class="marker" src="marker.png" />  <span id="result" ></span>
+      <img style="margin-top:5px" class="wheel" src="test.png" />
+      
+      <!-- <img class="button" src="button.png" /> -->
+      <button class="button">SPIN</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
